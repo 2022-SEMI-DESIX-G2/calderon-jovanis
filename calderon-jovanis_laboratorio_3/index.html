@@ -1,0 +1,101 @@
+<script>
+    function palindromoDobleB(cadena, recursivo){
+        console.log("Base: " + cadena);
+        let numero = parseInt(cadena);
+        let cadenaInv = cadena.split("").reverse().join("");
+        if(cadena === cadenaInv){
+            if(recursivo){
+                let numero = parseInt(cadena);
+                let binario = numero.toString(2);
+                palindromoDobleB(binario, false);
+            }else{
+                console.log("El numero es palindromo de doble base");
+            }
+        }else{
+            console.log("El numero no es palindromo de doble base");
+        }
+    }
+
+    /*Problema 1*/
+    let verificar = "585";
+    let resp1 = palindromoDobleB(verificar, true); //585
+
+    function cantidadCaracteresC(cadena){
+        let arreglo = cadena.split(""); //Convierto a vector
+        let nombre = []; //Vector para almacenar las distintas letras
+        let cantidad = []; //Vector para contar las distintas letras
+        for(let i = 0; i < arreglo.length; i++){ //recorre cada caracter de la cadena
+            //Verificar si ya esta en vector nombre
+            let bandera = false;
+            for(let j = 0; j < nombre.length; j++){
+                if(nombre[j] === arreglo[i]){
+                    bandera = true;
+                }
+            }
+            if(!bandera){ //sino esta en nombre lo agrego
+                nombre[nombre.length] = arreglo[i];
+                //Contar cuantos igual a este existe en la cadena
+                let cantidadAux = 0;
+                for(let j = 0; j < arreglo.length; j++){//Recorro todo arreglo
+                    if(arreglo[j] === arreglo[i]){//si coincide con actual cuento
+                        cantidadAux++;
+                    }
+                }
+                cantidad[cantidad.length] = cantidadAux;
+            }
+        }
+        return {nombre: nombre, cantidad: cantidad, largo: nombre.length};
+    }
+
+    /*Problema 2*/
+    let cadena = "AABBBACAA";
+    console.log("Cadena dada: " + cadena);
+    let resp2 = cantidadCaracteresC(cadena);
+    console.log("Hay: ");
+    for(let i = 0; i < resp2.largo; i++){
+        console.log(resp2.cantidad[i] + " " + resp2.nombre[i]);
+    }
+
+    function anioBisiesto(anio){
+        if((0 == anio % 4) && (0 != anio % 100) || (0 == anio % 400)){
+            console.log(anio + " es un año bisiesto");
+        }else{
+            console.log(anio + " no es un año bisiesto");
+        }
+    }
+
+    /*Problema 3*/
+    let anio = 2020;
+    anioBisiesto(anio);
+
+    
+    function isPrimeNum(num){
+        for (var i = 2; i < num; i++) {
+            if (num%i==0){
+                return false;
+            }
+        };
+        return true;
+    }
+
+    function sumaPrimos(numero){
+        let acumulador = 0;
+        if(numero > 0 && numero < 1000000){
+            for(let i = 1; i <= numero; i++){
+                if(isPrimeNum(i)){
+                    acumulador += i;
+                }
+            }
+        }else{
+            console.log("El numero(n) debe cumpler con 0 < n < 1000000");
+            acumulador = -1; //indico que dio error
+        }
+        return acumulador;
+    }
+
+    /*Problema 4*/
+    let numero = 7;
+    console.log("Numero suministrado: " + numero);
+    let resp4 = sumaPrimos(numero);
+    console.log("la suma de numero primos es: " + resp4);
+</script>
