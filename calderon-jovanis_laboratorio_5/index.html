@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Laboratorio #5</title>
+    </head>
+    <body>
+        <section>
+            <form id="frmFibonacci" class="formulario">
+                <h3>Secuencia Fibonacci</h3>
+                <label for="frmCantidad">Cantidad de Elementos: </label>
+                <br/>
+                <input id="frmCantidad" type="number" min="1" />
+                <div class="divBoton">
+                    <p>
+                        <button type="submit" class="boton">Calcular</button>
+                    </p>
+                </div>
+            </form>
+        </section>
+        <section>
+            <div id="response"></div>
+        </section>
+        <script src="utils.js"></script>
+        <script src="index.js"></script>
+        <style>
+            .formulario {
+                background-color: lightgray;
+                padding-left: 18px;
+                padding-right: 18px;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                border-style: ridge;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            .boton {
+                background-color: brown;
+                color: white;
+                padding-left: 45px;
+                padding-right: 45px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+            .divBoton {
+                text-align: right;
+            }
+            #response {
+                display: flex;
+                flex-wrap: wrap; 
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            .card {
+                display: flex;
+                justify-content: center;
+                border: 1px solid grey;
+                padding: 0.5rem;
+                margin: 0.5rem;
+                min-width: 26px;
+            }
+        </style>
+    </body>
+</html>
