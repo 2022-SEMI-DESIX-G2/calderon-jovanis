@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Parcial #2</title>
+    </head>
+    <body class="container">
+        <section class="inputBox">
+            <form id="pokemon-finder-form" class="formulario">
+                <div class="titulo">Buscador de pokemones</div>
+                <div class="description">Busca desde pokemones hasta las abilidades de los mismos.</div>
+                <div class="containerInput">
+                    <div class="item">
+                        <label for="pokemon-finder-query" class="label">Buscar</label>
+                        <input type="text" id="pokemon-finder-query" class="inputText" />
+                    </div>
+                    <div class="item">
+                        <label for="pokemon-finder-search-type" class="label">Tipo de Búsqueda</label>
+                        <select id="pokemon-finder-search-type" class="inputDropDown">
+                            <option value="pokemon">Por pokemon</option>
+                            <option value="ability">Por habilidad</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="bottonContainer">
+                    <button type="submit" class="button">Buscar</button>
+                </div>
+            </form>
+        </section>
+        <script src="utils.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

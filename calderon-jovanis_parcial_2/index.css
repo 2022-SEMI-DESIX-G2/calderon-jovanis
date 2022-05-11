@@ -1,0 +1,83 @@
+.container {
+    background-color: #031926;
+    display: flex;
+    justify-content: center;
+}
+
+.inputBox {
+    margin-top: 100px;
+    width: fit-content;
+    background-color: #F7F9F7;
+    border-radius: 5px;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 35px;
+    padding-bottom: 14px;
+}
+
+.inputText {
+    width: 218px;
+    height: 27px;
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.inputDropDown {
+    width: 218px;
+    height: 27px;
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.button {
+    width: 108px;
+    height: 27px;
+    background-color: #19A5FB;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.label {
+    color: #000000;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.description {
+    color: #000000;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.titulo {
+    color: #000000;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.containerInput {
+    display: flex;
+    flex-direction: row;  
+}
+
+.item {
+    display: flex;
+    flex-direction: column;  
+}
