@@ -8,29 +8,69 @@
         <title>Parcial #2</title>
     </head>
     <body class="container">
-        <section class="inputBox">
-            <form id="pokemon-finder-form" class="formulario">
-                <div class="titulo">Buscador de pokemones</div>
-                <div class="description">Busca desde pokemones hasta las abilidades de los mismos.</div>
-                <div class="containerInput">
-                    <div class="item">
-                        <label for="pokemon-finder-query" class="label">Buscar</label>
-                        <input type="text" id="pokemon-finder-query" class="inputText" />
+        <section class="filas">
+            <section class="inputBox">
+                <div class="divLogo">
+                    <img class="logo" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png">
+                </div>
+                <form id="pokemon-finder-form" class="formulario">
+                    <div class="titulo">Buscador de pokemones</div>
+                    <div class="description">Busca desde pokemones hasta las abilidades de los mismos.</div>
+                    <div class="containerInput">
+                        <div class="item">
+                            <label for="pokemon-finder-query" class="label">Buscar</label>
+                            <input type="text" id="pokemon-finder-query" class="inputText" />
+                        </div>
+                        <div class="item2">
+                            <label for="pokemon-finder-search-type" class="label">Tipo de Búsqueda</label>
+                            <select id="pokemon-finder-search-type" class="inputDropDown">
+                                <option value="pokemon">Por pokemon</option>
+                                <option value="ability">Por habilidad</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="item2">
-                        <label for="pokemon-finder-search-type" class="label">Tipo de Búsqueda</label>
-                        <select id="pokemon-finder-search-type" class="inputDropDown">
-                            <option value="pokemon">Por pokemon</option>
-                            <option value="ability">Por habilidad</option>
-                        </select>
+                    <div class="bottonContainer">
+                        <button type="submit" class="button">Buscar</button>
+                    </div>
+                </form>
+            </section>
+            <section id="pokemon-finder-response" class="outputBox">
+
+            </section>
+            <section class="outputBox">
+                <h1>Pikachu (25)</h1>
+                <div class="row">
+                    <div class="column">
+                        <div>
+                            <h2>Sprites</h2>
+                            <img class="sprites" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Front_Image_Pokemon">
+                            <img class="sprites2" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png" alt="Back_Image_Pokemon">
+                        </div>
+                        <div class="margin1">
+                            <h2>Evolution chain</h2>
+                            <ul>
+                                <li>Pichu</li>
+                                <li>Pikachu</li>
+                                <li>Raichu</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="derecha">
+                            <h2>Weight / Height</h2>
+                            <div class="texto">40 / 3</div>
+                        </div>
+                        <div class="margin2">
+                            <h2>Abilities</h2>
+                            <ul class="ul2">
+                                <li>Limber</li>
+                                <li>Imposter</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="bottonContainer">
-                    <button type="submit" class="button">Buscar</button>
-                </div>
-            </form>
+            </section>
         </section>
-        <section id="pokemon-finder-response"></section>
         <script src="utils.js"></script>
         <script src="index.js"></script>
     </body>
