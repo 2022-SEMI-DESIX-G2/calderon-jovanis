@@ -12,6 +12,12 @@
                 searchType
             });
         },
+        getEvolutionChain: (species) => {
+            return Utils.fetch({
+                url: species.url,
+                searchType: "EvolutionChain"
+            });
+        },
         fetch: async ({ url, searchType }) => {
             try {
                 const rawResponse = await fetch(url);
