@@ -29,6 +29,11 @@
                 throw error;
             }
         },
+        toUpperCaseFirst: (text) => {
+            let cadena = text.split("");
+            cadena[0] = cadena[0].toUpperCase();
+            return cadena.join("");
+        }
     }
     document.Utils = Utils;
 })();

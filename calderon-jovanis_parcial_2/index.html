@@ -14,23 +14,23 @@
                     <img class="logo" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png">
                 </div>
                 <form id="pokemon-finder-form" class="formulario">
-                    <div class="titulo">Buscador de pokemones</div>
-                    <div class="description">Busca desde pokemones hasta las abilidades de los mismos.</div>
+                    <div class="titulo">Pokemon Finder</div>
+                    <div class="description">Search from pokemons to their abilities.</div>
                     <div class="containerInput">
                         <div class="item">
-                            <label for="pokemon-finder-query" class="label">Buscar</label>
+                            <label for="pokemon-finder-query" class="label">Search</label>
                             <input type="text" id="pokemon-finder-query" class="inputText" />
                         </div>
                         <div class="item2">
-                            <label for="pokemon-finder-search-type" class="label">Tipo de Búsqueda</label>
+                            <label for="pokemon-finder-search-type" class="label">Search Type</label>
                             <select id="pokemon-finder-search-type" class="inputDropDown">
-                                <option value="pokemon">Por pokemon</option>
-                                <option value="ability">Por habilidad</option>
+                                <option value="pokemon">By pokemon</option>
+                                <option value="ability">By ability</option>
                             </select>
                         </div>
                     </div>
-                    <div class="bottonContainer">
-                        <button type="submit" class="button">Buscar</button>
+                    <div id="buttonDiv" class="bottonContainer">
+                        <button type="submit" class="button" id="btnSearch">Search</button>
                     </div>
                 </form>
             </section>
