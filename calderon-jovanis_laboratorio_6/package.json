@@ -1,0 +1,15 @@
+{
+  "name": "lab6",
+  "version": "0.0.1",
+  "description": "-",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ls": "ls -lsa",
+    "ping": "ping 8.8.8.8",
+    "dev": "node app.js",
+    "prod": "npm run ls && npm run dev"
+  },
+  "author": "Jovanis",
+  "license": "ISC"
+}
