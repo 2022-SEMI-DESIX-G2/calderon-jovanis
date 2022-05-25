@@ -41,7 +41,31 @@ const ejecutar = async () => {
     const query = "pikachu";
     const searchType = "pokemon";
     const response = await Utils.getPokemon({query, searchType});
-    console.log(response);
+    const species = await Utils.getEvolutionChain(response.species);
+    const evolutionChain = await Utils.getEvolutionChain(species.evolution_chain);
+    pokemonCard(response);
+    console.log('Cadena de Evolución: ');
+    evolutionChainList(evolutionChain.chain);
+}
+
+const pokemonCard = ({id, name, weight, height, abilities}) => {
+    console.log('Nombre: ' + Utils.toUpperCaseFirst(name));
+    console.log('Id: ' + id);
+    console.log('Altura: ' + height);
+    console.log('Peso: ' + weight);
+    console.log('Habilidades:');
+    abilities.map(({ability, is_hidden}) => {
+        console.log('   - ' + ability.name + (is_hidden ? ' *' : ''));
+    });
+}
+
+const evolutionChainList = ({species, is_baby, evolves_to}) => {
+    console.log('   - ' + species.name + (is_baby ? ' :)' : ''));
+    return ((brk, arry) => {
+        if(!brk){
+            evolutionChainList(arry);
+        }
+    })(evolves_to[0] === undefined, evolves_to[0]);
 }
 
 ejecutar();
