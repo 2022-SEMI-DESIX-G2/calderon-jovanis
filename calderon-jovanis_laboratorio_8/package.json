@@ -1,0 +1,14 @@
+{
+  "name": "calderon-jovanis_laboratorio_8",
+  "version": "1.0.0",
+  "description": "Laboratorio 8",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jovanis Calderón",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
