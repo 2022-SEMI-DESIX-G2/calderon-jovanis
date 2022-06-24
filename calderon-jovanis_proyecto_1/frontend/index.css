@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,900;1,700&display=swap');
+
+.container {
+    background-color: #031926;
+    display: flex;
+    justify-content: center;
+}
+
+.filas {
+    display: flex;
+    flex-direction: column;
+}
+
+.divLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -103px;
+}
+
+.inputBox {
+    margin-top: 100px;
+    width: fit-content;
+    background-color: #F7F9F7;
+    border-radius: 5px;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 35px;
+    padding-bottom: 14px;
+}
+
+.outputBox {
+    background-color: #F7F9F7;
+    border-radius: 5px;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.inputText {
+    width: 218px;
+    height: 22px;
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    font-family: 'Monserrat';
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.inputDropDown {
+    width: 218px;
+    height: 27px;
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    font-family: 'Monserrat';
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.button {
+    width: 108px;
+    height: 27px;
+    background-color: #19A5FB;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Monserrat';
+    font-weight: 700;
+    font-size: 12px;
+    border-width: 0px;
+}
+
+.label {
+    color: #000000;
+    font-family: 'Monserrat';
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.description {
+    color: #000000;
+    font-family: 'Monserrat';
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.titulo {
+    color: #000000;
+    font-family: 'Monserrat';
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.bottonContainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.containerInput {
+    display: flex;
+    flex-direction: row; 
+    margin-top: 8px; 
+}
+
+.item {
+    display: flex;
+    flex-direction: column;  
+}
+
+.item2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.derecha {
+    margin-right: 34px;
+}
+
+.texto {
+    color: #000000;
+    font-family: 'Monserrat';
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.margin1 {
+    margin-top: -5px;
+}
+
+.margin2 {
+    margin-right: 34px;
+    margin-top: 34px;
+}
+
+.sprites {
+    height: 50px;
+    width: 50px;
+}
+
+.sprites2 {
+    height: 50px;
+    width: 50px;
+}
+
+h1 {
+    color: #000000;
+    font-family: 'Monserrat';
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    color: #000000;
+    font-family: 'Monserrat';
+    font-weight: 700;
+    font-size: 12px;
+}
+
+ul {
+    color: #000000;
+    font-family: 'Monserrat';
+    font-weight: 300;
+    font-size: 12px;
+    padding-left: 18px;
+}
+
+.ul2 {
+    padding-left: 11px; 
+}
+
+.logo {
+    width: 257px;
+    height: 103px;
+}
