@@ -1,12 +1,15 @@
 require("dotenv").config();
 const axios = require('axios').default;
 const express = require('express');
+const cors = require("cors");
 const app = express();
 
 const PORT = process.env.PORT || 3000;
 const TIME_CACHE = process.env.TIME_CACHE || 5000;
 
 const CACHE = {};
+
+app.use(cors());
 
 app.get('/', (req, res) => {
     let output = '<h1>Ejemplo para ejecutar: </h1>';
@@ -23,7 +26,7 @@ app.get('/pokemon', async (req, res) => {
         diferenceTime = now - createDate;
         console.log("cache:", name, createDate, diferenceTime, "ms");
         if(diferenceTime <= TIME_CACHE){
-            return res.json({ data: CACHE[name], isCached: true });
+            return res.json({ data: CACHE[name].data, isCached: true });
         }
     }
     let responseData;
@@ -36,7 +39,7 @@ app.get('/pokemon', async (req, res) => {
       responseData = { error: error.toString(), name };
     }
     console.log("registre in cache:", responseData.name, now);
-    CACHE[name] = {responseData, createDate: now};
+    CACHE[name] = {data: responseData, createDate: now};
     res.send({ data: responseData, isCached: false });
 });
 
