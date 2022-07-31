@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Parcial #2</title>
+    </head>
+    <body class="container">
+        <section class="filas">
+            <section class="inputBox">
+                <div class="divLogo">
+                    <img class="logo" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png">
+                </div>
+                <form id="pokemon-finder-form" class="formulario">
+                    <div class="titulo">Pokemon Finder</div>
+                    <div class="description">Search from pokemons to their abilities.</div>
+                    <div class="containerInput">
+                        <div class="item">
+                            <label for="pokemon-finder-query" class="label">Search</label>
+                            <input type="text" id="pokemon-finder-query" class="inputText" />
+                        </div>
+                        <div class="item2">
+                            <label for="pokemon-finder-search-type" class="label">Search Type</label>
+                            <select id="pokemon-finder-search-type" class="inputDropDown">
+                                <option value="pokemon">By pokemon</option>
+                                <option value="ability">By ability</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="buttonDiv" class="bottonContainer">
+                        <button type="submit" class="button" id="btnSearch">Search</button>
+                    </div>
+                </form>
+            </section>
+            <section id="pokemon-finder-response"></section>
+        </section>
+        <script src="utils.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
